@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{%url 'signIn' %}">
+    {% csrf_token %}
+    <table>
+        <tr><td><b>First Name:</b></td><td><input type="text" name="Firstname"></td></tr>
+        <tr><td><b>Second Name:</b></td><td><input type="text" name="Secondname"></td></tr>
+        <tr><td><b>Username</b></td><td><input type="text" name="Username"></td></tr>
+        <tr><td><b>Password:</b></td><td><input type="password" name="Password"></td></tr>
+        <tr><td><input type="submit"></td></tr>
+    </table>
+</form>
+</body>
+</html>

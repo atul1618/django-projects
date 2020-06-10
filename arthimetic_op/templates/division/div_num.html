@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{%url 'dresult' %}">
+    {% csrf_token %}
+    <table>
+        <tr><td><b>Enter first number:</b></td><td><input type="text" name="num1"></td></tr>
+        <tr><td><b>Enter second number:</b></td><td><input type="text" name="num2"></td></tr>
+        <tr><td><input type="submit" value="Calculate"></td></tr>
+    </table>
+</form>
+
+</body>
+</html>
